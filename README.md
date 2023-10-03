@@ -13,7 +13,6 @@ The data is organized into the following *.csv* files:
 - Parks: Data relating to the history of the ballparks used by MLB teams.
 - Active teams: Teams and leagues by season.
 - Teams: Basic historical info on teams.
-- Current team names: Supplement to teams file. Includes current MLB team, when appropriate.
 - Rosters: Players and teams by season.
 - Game info: Administrative info for games, such as teams, locations, attendance, weather conditions, etc.
 - Events: Complete recounting of game events as one would see on the official score sheet, for each game in the record.
@@ -90,7 +89,7 @@ Event, appearance, and game log files are broken up into multiple *zip* files to
 
 ## Teams
 - *id*: Unique, 3-character code of the team.
-- *league_id*: League the team played in for that season. Null values indicate that the team was independent for that season.
+- *league_id*: League the team played in for that season. Null values indicate that the team was independent.
 - *location*: City where the team is located. For barnstorming or all-star teams, this value is the name of the team (example: "Bob Feller" for the Bob Feller All Stars, which was a barnstorming team in the 1940's) 
 - *name*: Common name or mascot associated with the team.
 - *established_date*: Date when team was established. The original source data listed this as a year, so a default value of 4/1/xxxx is given.
@@ -98,9 +97,9 @@ Event, appearance, and game log files are broken up into multiple *zip* files to
 
 ## Teams current names
 This file is included to quickly reference older ids of current teams.
-- *current_id*: Unique, 3-digit code of the current MLB team.
-- *old_id*: Unique, 3-digit code for previous iterations of the team.	
-- *league*: League the team played in for that season.
+- *id*: Unique, 3-digit code of the MLB team. May be current or a previous iteration of the team.
+- *current_id*: Unique, 3-digit code of the current MLB team, if applicable.	
+- *league_id*: League the team played in for that season.
 - *division*: Division the team played in for that season, when applicable. Null, otherwise.
 - *location*: City, state, or region that the team represents.
 - *name*: Common name or mascot associated with the team.	
