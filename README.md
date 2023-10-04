@@ -83,17 +83,23 @@ Event, appearance, and game log files are broken up into multiple *zip* files to
 - *country*: Country where park is located. This is given as the ISO 3166 alpha-3 country code.
 
 ## Active teams
-- *id*: Unique, 3-character code of the team.
-- *league_id*: League the team played in for that season. Null values indicate that the team was independent for that season.
-- *season*: Year.
+- *season*: Year
+- *id*: Unique, 3-character code for the team of record.
+- *league*: League the team played in for that season. Null values indicate that the team was independent for that season.
+- *division*: Division the team played in that season. Null values for season prior to introduction of division play.
 
 ## Teams
-- *id*: Unique, 3-character code of the team.
-- *league_id*: League the team played in for that season. Null values indicate that the team was independent.
-- *location*: City where the team is located. For barnstorming or all-star teams, this value is the name of the team (example: "Bob Feller" for the Bob Feller All Stars, which was a barnstorming team in the 1940's) 
-- *name*: Common name or mascot associated with the team.
-- *established_date*: Date when team was established. The original source data listed this as a year, so a default value of 4/1/xxxx is given.
-- *defunct_date*: Date when team was dissolved. The original source data listed this as a year, so a default value of 11/1/xxxx is given.
+- *id* : Unique, 3-character code of the team in the time period between *est_date* and *last_date*.
+- *current_id*: Unique, 3-character code of the team if the team currently plays in the MLB.
+- *name1*: First identifier for the team of record; typically the city or region the team orginates from.
+- *name2*: Second identifier for the team of record; typically the mascot associated with the team.
+- *alt_name*: Alternate identifier for the team of record.
+- *league*: League or leagues of the team in the time period between *est_date* and *last_date*.
+- *division*: Division of the team in the time period between *est_date* and *last_date*.
+- *city*: Home city of the team of record.
+- *state*: Home state of the team of record. 
+- *est_date*: Date the team was established. If the month or day is not precisely known, a default value of 4/1/xxxx is given.
+- *last_date*: Date the team made its last appearance. If the month or day is not precisely known, a default value of 11/1/xxxx is given.
 
 ## Teams current names
 This file is included to quickly reference older ids of current teams.
