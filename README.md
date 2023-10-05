@@ -395,7 +395,8 @@ Player occupying bases at the start of the play of record.
 - *fielder_with_fifth_assist*: Fielding position of the fielder with the fifth assist.
 - *event_num*: Numerical sequence indicating the order of the plays.
 
-## Game log teams
+## Game Log Teams
+These files contain all games, regardless of season type (regular season, post-season, all star, exhibition) where summary statistics available. The *game_info* file contains all administrative information relating to the game of record, including the season type.
 - *game_id*: Unique 12-character alpha-numeric code for each game in the record. Of the form team_id+yyyymmdd+game_num.
 - *team_id*: Unique 8-character alpha-numeric code that references the teams file.
 - *score*: Runs scored by the team.
@@ -440,6 +441,7 @@ Fielding stats
 - *tp*: Number of triple plays
 
 ## Game log batters
+These files contain all games, regardless of season type (regular season, post-season, all star, exhibition) where summary statistics available. The *game_info* file contains all administrative information relating to the game of record, including the season type.
 - *id*: Unique 8-character alpha-numeric code that references the personnel file.
 - *game_id*: Unique 12-character alpha-numeric code for each game in the record. of the form team_id+yyyymmdd+game_num.
 - *pa*: Number of plate appearances
@@ -467,6 +469,7 @@ Fielding stats
 - *games*: Number of games (=1)
 
 ## Game log pitchers
+These files contain all games, regardless of season type (regular season, post-season, all star, exhibition) where summary statistics available. The *game_info* file contains all administrative information relating to the game of record, including the season type.
 - *id*: Unique 8-character alpha-numeric code that references the personnel file.
 - *game_id*: Unique 12-character alpha-numeric code for each game in the record. of the form team_id+yyyymmdd+game_num.
 - *pa*: Number of plate appearances
@@ -501,6 +504,7 @@ Fielding stats
 - *games*: Number of games (=1)
 
 ## Game log fielders
+These files contain all games, regardless of season type (regular season, post-season, all star, exhibition) where summary statistics available. The *game_info* file contains all administrative information relating to the game of record, including the season type.
 - *id*: Unique 8-character alpha-numeric code that references the personnel file.	
 - *game_id*: Unique 12-character alpha-numeric code for each game in the record. of the form team_id+yyyymmdd+game_num.
 - *field_pos*: Numerical code representing the fielding position of the player of record.
