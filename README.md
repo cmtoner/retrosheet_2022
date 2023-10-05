@@ -221,7 +221,8 @@ This file is included to quickly reference older ids of current teams.
 - *postpone_cancel_info*: Further information pertaining to why a game was postponed or canceled.
 
 ## Events
-- *game_id*: Unique 12-digit alpha-numeric code for each game in the record. Of the form team_id+yyyymmdd+game_num.
+These files contain all games, regardless of season type (regular season, post-season, all star, exhibition) where play-by-play is available. The *game_info* file contains all administrative information relating to the game of record, including the season type.
+- *game_id*: Unique 12-character alpha-numeric code for each game in the record. Of the form team_id+yyyymmdd+game_num.
 - *vis_team*:  Visiting team id. References team file.
 - *inning*: Inning number.
 - *batting_team*: Team at bat (0 for visiting team and 1 for home team).
